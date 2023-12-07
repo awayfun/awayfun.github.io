@@ -1,0 +1,1 @@
+import{_ as t,o as e,c as r,R as a}from"./chunks/framework.o-1c6b6b.js";const x=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"hero/liyamu.md","filePath":"hero/liyamu.md"}'),n={name:"hero/liyamu.md"},l=a("",2),s=[l];function g(i,p,d,o,h,c){return e(),r("div",null,s)}const f=t(n,[["render",g]]);export{x as __pageData,f as default};
