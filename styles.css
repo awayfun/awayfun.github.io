@@ -1,19 +1,1 @@
-.container {
-  width: 100%;
-  text-align: center;
-}
 
-.nav-page {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.nav-page a {
-  display: inline-block;
-  margin: 5px;
-  text-decoration: none;
-  color: black;
-  padding: 5px 10px;
-  border: 1px solid #ccc;
-}
