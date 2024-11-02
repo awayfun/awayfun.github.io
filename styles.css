@@ -1,0 +1,39 @@
+.container {
+  width: 100%;
+  text-align: center;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+@media (max-width: 768px) {
+.mobile-nav {
+    display: block;
+    background-color: #ccc;
+    padding: 10px;
+  }
+
+.nav-page {
+    display: none;
+  }
+
+  button {
+    margin: 5px;
+  }
+}
+
+.nav-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-page a {
+  display: inline-block;
+  margin: 5px;
+  text-decoration: none;
+  color: black;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+}
