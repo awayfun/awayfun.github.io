@@ -5,6 +5,8 @@
   <style>
     body {
       text-align: center;
+      margin: 0;
+      padding: 0;
     }
 
     nav {
@@ -14,6 +16,7 @@
 
     button {
       margin: 10px;
+      padding: 5px 10px;
     }
 
     ul {
@@ -24,7 +27,7 @@
 
     li {
       display: inline-block;
-      width: 100px;
+      width: auto;
       margin: 5px;
       background-color: gray;
       padding: 10px;
@@ -33,6 +36,21 @@
     a {
       text-decoration: none;
       color: white;
+      display: block;
+    }
+
+    /* 媒体查询，针对手机屏幕 */
+    @media (max-width: 768px) {
+      li {
+        width: auto;
+        margin: 5px;
+        padding: 8px;
+      }
+
+      button {
+        padding: 8px 16px;
+        font-size: 14px;
+      }
     }
   </style>
 </head>
@@ -65,41 +83,4 @@
   </div>
   <div id="page3" style="display:none;">
     <ul>
-      <li><a href="https://www.baidu.com" target="_blank">导航 3-1</a></li>
-      <li><a href="https://www.baidu.com" target="_blank">导航 3-2</a></li>
-      <li><a href="https://www.baidu.com" target="_blank">导航 3-3</a></li>
-      <li><a href="https://www.baidu.com" target="_blank">导航 3-4</a></li>
-      <li><a href="https://www.baidu.com" target="_blank">导航 3-5</a></li>
-    </ul>
-  </div>
-    <div id="page4" style="display:none;">
-    <ul>
-      <li><a href="https://www.baidu.com" target="_blank">导航 3-1</a></li>
-      <li><a href="https://www.baidu.com" target="_blank">导航 4-2</a></li>
-      <li><a href="https://www.baidu.com" target="_blank">导航 3-3</a></li>
-      <li><a href="https://www.baidu.com" target="_blank">导航 3-4</a></li>
-      <li><a href="https://www.baidu.com" target="_blank">导航 3-5</a></li>
-    </ul>
-  </div>
-    <div id="page5" style="display:none;">
-    <ul>
-      <li><a href="https://www.baidu.com" target="_blank">导航 3-1</a></li>
-      <li><a href="https://www.baidu.com" target="_blank">导航 5-2</a></li>
-      <li><a href="https://www.baidu.com" target="_blank">导航 3-3</a></li>
-      <li><a href="https://www.baidu.com" target="_blank">导航 3-4</a></li>
-      <li><a href="https://www.baidu.com" target="_blank">导航 3-5</a></li>
-    </ul>
-  </div>
-  <script>
-    function showPage(pageNumber) {
-      document.getElementById('page1').style.display = 'none';
-      document.getElementById('page2').style.display = 'none';
-      document.getElementById('page3').style.display = 'none';
-            document.getElementById('page4').style.display = 'none';
-            document.getElementById('page5').style.display = 'none';
-      document.getElementById('page' + pageNumber).style.display = 'block';
-    }
-  </script>
-</body>
-
-</html>
+      <li><a href="https://ww
