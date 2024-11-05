@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>首页</title>
+    <title>导航站</title>
     <style>
         /* 简单的样式 */
         body {
             font-family: Arial, sans-serif;
         }
-        .back-button {
+        .nav-button {
             display: block;
             margin: 20px;
             padding: 10px 20px;
-            background-color: #28A745;
+            background-color: #007BFF;
             color: white;
             text-decoration: none;
             border-radius: 5px;
@@ -20,11 +20,14 @@
     </style>
 </head>
 <body>
-    <h1>欢迎来到首页</h1>
-      <li><a href="https://www.baidu.com" target="_blank">导航 1-1</a></li>
-      <li><a href="https://www.baidu.com" target="_blank">导航 1-2</a></li>
-      <li><a href="https://www.baidu.com" target="_blank">导航 1-3</a></li>
-      <li><a href="https://www.baidu.com" target="_blank">导航 1-4</a></li>
-      <li><a href="https://www.baidu.com" target="_blank">导航 1-5</a></li>
+    <h1>欢迎来到导航站</h1>
+    <a href="javascript:void(0);" class="nav-button" onclick="redirectToBaidu()">进入百度</a>
+
+    <script>
+        function redirectToBaidu() {
+            window.open('https://www.baidu.com', '_blank');
+            window.open('floatingButton.html', 'buttonWindow', 'width=100,height=100,resizable=no,scrollbars=no,status=no');
+        }
+    </script>
 </body>
 </html>
